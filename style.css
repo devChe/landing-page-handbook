@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  color: rgb(58, 52, 52);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url('../landing/image/BG.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 995px;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  align-items: center;
+}
+
+.logo {
+  width: 13%;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  padding: 30px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.space {
+  flex: 1;
+}
+
+.srchBarContainer {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerSrchBar {
+  width: 700px;
+  height: 55px;
+  background-image: url('./image/Vector_search_icon.svg');
+  background-position: 95% 13px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 25px;
+  text-align: center;
+}
+
+.slogan {
+  text-align: center;
+}
+
+.slogan h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 90px;
+  color: #fff;
+}
+
+.slogan p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.learnBtn {
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 60px;
+  color: #8466ec;
+  border: none;
+  font-weight: bold;
+}
+
+.servicesContainer {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ourServices {
+  position: relative;
+  grid-column: 1 / 13;
+  text-align: center;
+  padding: 30px;
+}
+
+.shadowQualityWorks {
+  font-size: 120px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  opacity: 0.1;
+}
+
+.servicesTitle {
+  position: absolute;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  color: rgb(58, 53, 53);
+  top: 90px;
+  left: 37%;
+}
+
+.imgGridDrone {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  justify-content: center;
+}
+
+.droneImg {
+  width: 150px;
+}
+
+.imgGridDev {
+  grid-column: 5 / 9;
+  grid-row: 2 / 3;
+  align-items: center;
+  font-size: 45px;
+  color: #8466ec;
+}
+
+.imgGridVideo {
+  grid-column: 9 / 13;
+  grid-row: 2 / 3;
+  align-self: center;
+}
+
+.droneSurveyor {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.droneSurveyor h2 {
+  padding: 20px 0;
+}
+
+.webDevelopment {
+  grid-column: 5 / 9;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.webDevelopment h2 {
+  padding: 20px 0;
+}
+
+.videography {
+  grid-column: 9 / 13;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.videography h2 {
+  padding: 20px 0;
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-wrap: nnowrap;
+}
+
+.aboutUsContainer > div {
+  width: 100%;
+  margin: 50px;
+}
+
+.aboutImg {
+  width: 2000px;
+  height: 690px;
+}
+
+.aboutUsContent {
+  position: relative;
+}
+
+.shadowWeCare {
+  font-size: 120px;
+  opacity: 0.1;
+}
+
+.aboutUsTitle {
+  position: absolute;
+  font-size: 50px;
+  top: 90px;
+  left: 15px;
+}
+
+.aboutUsMain > p {
+  width: 600px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.aboutUsBtn {
+  font-size: 20px;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 60px;
+  background-color: #8466ec;
+  color: #fff;
+  border: none;
+}
+
+/*Our team Section*/
+
+.ourTeamContainer {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.ourTeamGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ourTeam {
+  position: relative;
+  grid-column: 1 / 13;
+  text-align: center;
+  padding: 30px;
+}
+
+.shadowOurTeam {
+  font-size: 120px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  opacity: 0.1;
+}
+
+.ourTeamTitle {
+  position: absolute;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  color: rgb(58, 53, 53);
+  top: 90px;
+  left: 37%;
+}
+
+.imgGridDeveloper {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  justify-content: center;
+}
+
+.devImg {
+  width: 150px;
+}
+
+.imgGridDroneMaster {
+  grid-column: 5 / 9;
+  grid-row: 2 / 3;
+  align-items: center;
+  font-size: 45px;
+  color: #8466ec;
+}
+
+.droneImg {
+  width: 285px;
+}
+.imgGridDesigner {
+  grid-column: 9 / 13;
+  grid-row: 2 / 3;
+  align-self: center;
+}
+
+.developer {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.developer h2 {
+  padding: 20px 0;
+}
+
+.droneMaster {
+  grid-column: 5 / 9;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.droneMaster h2 {
+  padding: 20px 0;
+}
+
+.designerImg {
+  grid-column: 9 / 13;
+  grid-row: 3 / 5;
+  font-size: 20px;
+  justify-self: center;
+  width: 230px;
+}
+
+.designerImg h2 {
+  padding: 20px 0;
+}
